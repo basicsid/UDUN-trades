@@ -19,26 +19,10 @@ import java.util.List;
 public class SidVillagerTrades {
 
     public SidVillagerTrades(){
-        //BasicTrade tradoc = new BasicTrade(1, new ItemStack(ItemRegistry.rustedgear.get()), 2, 1);
-
-            //List<VillagerTrades.ITrade> tradeList = getTradeList(VillagerProfession.CLERIC);
-            //List<VillagerTrades.ITrade> tradeList2 = getTradeList(VillagerProfession.TOOLSMITH);
-            //List<VillagerTrades.ITrade> tradeList3 = getTradeList(VillagerProfession.LIBRARIAN);
             ItemStack heroItem = new ItemStack(ItemRegistry.award.get());
             ItemStack test = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("iceandfire", "fire_dragon_heart")));
             ItemStack test2 = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("iceandfire", "ice_dragon_heart")));
             ItemStack test3 = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("iceandfire", "lightning_dragon_heart")));
-            /**BasicTrade tradoc = new BasicTrade(test,heroItem, 5,30,0.0f);
-            BasicTrade tradoc2 = new BasicTrade(test2,heroItem, 5,30,0.0f);
-            BasicTrade tradoc3 = new BasicTrade(test3,heroItem, 5,30,0.0f);
-            tradeList.add(tradoc);
-            tradeList2.add(tradoc2);
-            tradeList3.add(tradoc3);
-            setTradeList(5, tradeList,VillagerProfession.CLERIC);
-            setTradeList(5, tradeList2,VillagerProfession.TOOLSMITH);
-            setTradeList(5, tradeList3,VillagerProfession.LIBRARIAN);
-            **/
-
             ItemStack ectoplasm = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("iceandfire","ectoplasm")),8);
             ItemStack cyclops_skull = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("iceandfire","cyclops_skull")));
             ItemStack scales = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("iceandfire","shiny_scales")),16);
@@ -88,7 +72,6 @@ public class SidVillagerTrades {
      * @param E The amount of emeralds you want in the trade
      * @return An ItemStack of X emeralds.
      */
-
     protected ItemStack emerald(int E){
 
         return new ItemStack(Items.EMERALD, E);
