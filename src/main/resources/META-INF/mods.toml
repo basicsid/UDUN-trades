@@ -1,0 +1,44 @@
+
+modLoader="javafml"
+loaderVersion="[34,)"
+
+license="All rights reserved"
+
+[[mods]]
+
+modId="basictweaks"
+
+version="1.1"
+
+displayName="Basic Tweaks"
+
+displayURL="http://twitter.com/basicsid" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="sid.png" #optional
+# A text field displayed in the mod UI
+credits="Always thankful for Robert Yannes <3" #optional
+# A text field displayed in the mod UI
+authors="BasicSID" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+This is just a placeholder mods.toml while I get back into minecraft modding. If you're reading this, you probably shouldn't tell me, or I'll keep it here for another version.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.sid]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[34,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3]"
+    ordering="NONE"
+    side="BOTH"
